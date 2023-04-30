@@ -1,6 +1,6 @@
 ### 项目简介
 
-口碑点评系统是一个分布式项目，类似于大众点评，实现了社交，电商等功能，该项目将社交与电商业务分离成两个服务，并部署在多个服务器上，使用nginx作为反向代理实现负载均衡，实现集群+分布式架构，提高了系统的可用性和可扩展性，此外，采用消息队列实现异步下单提升用户体验，使用分布式锁实现商品秒杀功能，解决高并发场景下超买超卖问题。
+口碑点评系统是一个分布式项目，类似于大众点评，实现了社交，电商等功能，该项目将社交与电商业务分离成两个服务，并部署在多个服务器上，使用**Nginx**作为反向代理实现负载均衡，实现集群+分布式架构，提高了系统的可用性和可扩展性，此外，采用消息队列实现异步下单提升用户体验，使用分布式锁实现商品秒杀功能，解决高并发场景下超买超卖问题。
 
 下面是项目的架构图：
 
@@ -22,23 +22,23 @@
 
 ### 项目技术栈
 
-前端：HTML+CSS+JavaScript + Vue + ElementUI + JavaWeb
+前端：`HTML+CSS+JavaScript + Vue + ElementUI + JavaWeb`
 
-后端：SSMP + SpringBoot + MySQL + Lua
+后端：`SSMP + SpringBoot + MySQL + Lua`
 
-中间件及开发环境：Druid+Redission+Redis+RabbitMQ+Maven+Git
+中间件及开发环境：`Druid+Redission+Redis+RabbitMQ+Maven+Git`
 
-开发环境：Win10+CentOS7+IDEA2022+Tomcat7+JDK11
+开发环境：`Win10+CentOS7+IDEA2022+Tomcat7+JDK11`
 
 ### 如何启动
 
-1 下载项目，安装项目所需组件，例如MySQL,Redis,RabbitMQ等；
+1 下载项目，安装项目所需组件，例如`MySQL,Redis,RabbitMQ`等；
 
-2 按照Pom.xml导入相关依赖坐标，修改配置application.yml信息；
+2 按照`Pom.xml`导入相关依赖坐标，修改配置`application.yml`信息；
 
-3 根据Resource目录下的数据模型，执行sql脚本，创建数据库及表信息；
+3 根据**Resource**目录下的数据模型，执行`**sql**`脚本，创建数据库及表信息；
 
-4 修改配置Nginx中的Conf文件，包括服务器集群，端口，映射路径，默认页面等；
+4 修改配置**Nginx**中的**Conf**文件，包括服务器集群，端口，映射路径，默认页面等；
 
 5 搭建好所有环境后，启动项目，访问http://localhost:8080，进入登录页面；
 
